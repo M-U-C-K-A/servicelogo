@@ -52,3 +52,5 @@ Here's a list of images available in the `images` sub-folder:
 | WALLHACK           | WALLHACK logo                                                            | ![WALLHACK](images/WALLHACK.png)                    |
 | X                  | X logo                                                                   | ![X](images/X.png)                                  |
 | htmx               | htmx logo                                                                | ![htmx](images/htmx.png)                            |
+
+The images are provided by SAWARATSUKI. 画像はさわらつきが提供しています。
