@@ -24,7 +24,13 @@ Chaque logo suit la même recette : de grosses lettres arrondies, la lecture du 
 
 ## Anatomie d'un logo
 
-<p align="center"><img src="docs/layers.svg" width="860" alt="Les trois calques d'un logo, en vue isométrique éclatée : ombre, contour blanc, contenu"></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/layers-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="docs/layers.svg">
+    <img src="docs/layers.svg" width="860" alt="Les trois calques d'un logo, en vue isométrique éclatée : ombre, contour blanc, contenu">
+  </picture>
+</p>
 
 Un logo, c'est **un seul fichier SVG** avec trois calques. Les formes (lettres, icônes, cartes) sont déclarées une seule fois dans `<defs>` sous forme de silhouette sans couleur, puis réutilisées deux fois avec `<use>` :
 
@@ -53,7 +59,13 @@ Un logo, c'est **un seul fichier SVG** avec trois calques. Les formes (lettres, 
 
 ## Remplissage bicolore
 
-<p align="center"><img src="docs/two-tone.svg" width="860" alt="Remplissage bicolore en vue isométrique : un fond, une vague, puis la forme des lettres qui découpe le tout"></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/two-tone-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="docs/two-tone.svg">
+    <img src="docs/two-tone.svg" width="860" alt="Remplissage bicolore en vue isométrique : un fond, une vague, puis la forme des lettres qui découpe le tout">
+  </picture>
+</p>
 
 Les grosses lettres ne sont pas d'une seule couleur : un rectangle de la couleur de base et une vague plus claire sont découpés par la forme des lettres grâce à un `clipPath`.
 
@@ -68,7 +80,13 @@ Les grosses lettres ne sont pas d'une seule couleur : un rectangle de la couleur
 
 ## Du texte au sticker
 
-<p align="center"><img src="docs/pipeline.svg" width="960" alt="Les quatre étapes : texte vers tracés, silhouette, contour et ombre, recentrage"></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/pipeline-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="docs/pipeline.svg">
+    <img src="docs/pipeline.svg" width="960" alt="Les quatre étapes : texte vers tracés, silhouette, contour et ombre, recentrage">
+  </picture>
+</p>
 
 1. **Texte → tracés.** Tous les textes sont convertis en `<path>` avec [fontTools](https://github.com/fonttools/fonttools) : les SVG n'ont besoin d'aucune police installée et s'affichent pareil partout. Polices utilisées : SF Pro Rounded Black (lettres), Hiragino Maru Gothic (kana et kanji), JetBrains Mono (code).
 2. **Silhouette sans trous.** Pour le contour, on ne garde que le contour extérieur de chaque lettre. Pour les lettres rondes (o, e, c, a, s…), on prend même leur enveloppe convexe. Sans ça, l'ombre se verrait à travers le trou du « o ».
