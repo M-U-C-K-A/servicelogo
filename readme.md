@@ -3,6 +3,9 @@
 Une collection de logos façon **sticker kawaii** : langages, frameworks, services… et maintenant les matières de l'Éducation nationale.
 Chaque logo suit la même recette : de grosses lettres arrondies, la lecture du nom en japonais, un petit gag de dev (ou d'élève), un contour blanc épais et une ombre décalée.
 
+> [!NOTE]
+> Je ne suis pas l'auteur de ce style : les logos d'origine sont de **[SAWARATSUKI](https://github.com/SAWARATSUKI/KawaiiLogos)** (さわらつき). Ce dépôt les reprend et ajoute de nouveaux logos dans le même esprit. Merci à SAWARATSUKI 🙏
+
 <p align="center">
   <img src="images/Docker.png" width="32%" alt="Docker">
   <img src="images/education/Maths.png" width="32%" alt="Maths">
@@ -96,6 +99,8 @@ N'importe quel outil qui lit le SVG fait aussi l'affaire (Inkscape, rsvg-convert
 ## Tous les logos
 
 ### Langages, frameworks et outils
+
+*Les logos d'origine, par [SAWARATSUKI](https://github.com/SAWARATSUKI/KawaiiLogos).*
 
 | | | |
 |:---:|:---:|:---:|
